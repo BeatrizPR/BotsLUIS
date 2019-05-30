@@ -1,0 +1,126 @@
+{
+  "luis_schema_version": "3.2.0",
+  "versionId": "0.1",
+  "name": "TravelApp",
+  "desc": "",
+  "culture": "en-us",
+  "tokenizerVersion": "1.0.0",
+  "intents": [
+    {
+      "name": "BookFlight"
+    },
+    {
+      "name": "GetWeather"
+    },
+    {
+      "name": "None"
+    }
+  ],
+  "entities": [
+    {
+      "name": "Location",
+      "roles": [
+        "destination",
+        "origin"
+      ]
+    }
+  ],
+  "composites": [],
+  "closedLists": [],
+  "patternAnyEntities": [],
+  "regex_entities": [],
+  "prebuiltEntities": [
+    {
+      "name": "datetimeV2",
+      "roles": []
+    }
+  ],
+  "model_features": [],
+  "regex_features": [],
+  "patterns": [],
+  "utterances": [
+    {
+      "text": "book flight to bologna",
+      "intent": "BookFlight",
+      "entities": [
+        {
+          "entity": "Location",
+          "role": "destination",
+          "startPos": 15,
+          "endPos": 21
+        }
+      ]
+    },
+    {
+      "text": "how is the weather in bologna",
+      "intent": "GetWeather",
+      "entities": [
+        {
+          "entity": "Location",
+          "startPos": 22,
+          "endPos": 28
+        }
+      ]
+    },
+    {
+      "text": "i want to fly from london to madrid on october",
+      "intent": "BookFlight",
+      "entities": [
+        {
+          "entity": "Location",
+          "role": "origin",
+          "startPos": 19,
+          "endPos": 24
+        },
+        {
+          "entity": "Location",
+          "role": "destination",
+          "startPos": 29,
+          "endPos": 34
+        }
+      ]
+    },
+    {
+      "text": "i want to fly from malaga to paris on november",
+      "intent": "BookFlight",
+      "entities": [
+        {
+          "entity": "Location",
+          "role": "origin",
+          "startPos": 19,
+          "endPos": 24
+        },
+        {
+          "entity": "Location",
+          "role": "destination",
+          "startPos": 29,
+          "endPos": 33
+        }
+      ]
+    },
+    {
+      "text": "i would go to roma on march",
+      "intent": "BookFlight",
+      "entities": [
+        {
+          "entity": "Location",
+          "role": "destination",
+          "startPos": 14,
+          "endPos": 17
+        }
+      ]
+    },
+    {
+      "text": "what is the weather like in malaga",
+      "intent": "GetWeather",
+      "entities": [
+        {
+          "entity": "Location",
+          "startPos": 28,
+          "endPos": 33
+        }
+      ]
+    }
+  ],
+  "settings": []
+}

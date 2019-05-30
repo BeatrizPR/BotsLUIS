@@ -2,12 +2,13 @@
 Creando bots con LUIS
 
 Tutorial de Microsoft para la creación de un bot:
-  **Tutorial: Compilación de una aplicación LUIS para determinar las intenciones del usuario
+
+  *Tutorial: Compilación de una aplicación LUIS para determinar las intenciones del usuario
   
   https://docs.microsoft.com/es-es/azure/cognitive-services/luis/luis-quickstart-intents-only
   
   Otro tutorial:
-    **Integrando LUIS.ai a Microsoft Bot Framework
+    *Integrando LUIS.ai a Microsoft Bot Framework
     
     https://medium.com/@KiraMishima/integrando-luis-ai-a-microsoft-bot-framework-eeea0288e57f
     
